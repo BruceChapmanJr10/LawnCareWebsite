@@ -1,13 +1,44 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import Button from "../items/Button";
+import logoImg from "../assets/logo.jpg";
 
 const Navbar = () => {
+  const [isHidden, setIsHidden] = useState(false);
+  const { scrollY } = useScroll();
+  const lastYRef = useRef(0);
+
+  useMotionValueEvent(scrollY, "change", (y) => {
+    const difference = y - lastYRef.current;
+    if (Math.abs(difference) > 50) {
+      setIsHidden(difference > 0);
+      lastYRef.current = y;
+    }
+  });
   return (
-    <nav className="bg-black text-white px-8 md:px-16 lg:px-24">
+    // Navbar Scroll Effect
+    <motion.nav
+      animate={isHidden ? "hidden" : "visable"}
+      whileHover={"visable"}
+      onFocusCapture={() => setIsHidden(false)}
+      variants={{
+        visable: { y: "0%" },
+        hidden: { y: "-90%" },
+      }}
+      transition={{ duration: 0.2 }}
+      className="bg-black text-white px-8 md:px-16 lg:px-24 sticky top-0 z-10"
+    >
       <div className="container py-2 flex justify-center md:justify-between items-center">
         {/* Nav Title */}
         <div className="text-2xl font-bold hidden md:inline">
-          {" "}
-          Perfection Lawns{" "}
+          <div className="flex flex-row py-3">
+            <img
+              src={logoImg}
+              alt="Perfection Lawns"
+              className="rounded-full h-12 px-3"
+            />
+            Perfection Lawns LLC
+          </div>
         </div>
         {/* Nav Routes */}
         <div className="space-x-6">
@@ -28,14 +59,9 @@ const Navbar = () => {
           </a>
         </div>
         {/* Nav Button */}
-        <button
-          className="bg-gradient-to-r from-green-200 to-blue-400 text-white 
-                            hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full "
-        >
-          Call Now
-        </button>
+        <Button text="Call Now" />
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
