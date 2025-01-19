@@ -5,6 +5,7 @@ import {
   faPhone,
   faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import Button from "../items/Button";
 
 const Contact = () => {
   return (
@@ -86,13 +87,7 @@ const Contact = () => {
                   rows="5"
                 />
               </div>
-
-              <button
-                className="bg-gradient-to-r from-green-500 to-orange-500 text-white 
-                            hidden md:inline transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full "
-              >
-                Send
-              </button>
+              <Button text="Submit" />
             </form>
           </div>
         </div>
