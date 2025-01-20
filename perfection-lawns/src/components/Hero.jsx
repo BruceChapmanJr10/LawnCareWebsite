@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/heroimage.jpg";
-import Button from "../items/Button";
+import FormButton from "../items/FormButton";
+import CallButton from "../items/CallButton";
 
 const Hero = () => {
   return (
@@ -32,8 +33,7 @@ const Hero = () => {
         estimate over the phone.
       </p>
       <div className="mt-8 space-x-4 flex flex-row justify-center">
-        <Button text="Call Now" />
-        <Button text="Request Quote" />
+        <FormButton text="Request Quote" />
       </div>
     </div>
   );

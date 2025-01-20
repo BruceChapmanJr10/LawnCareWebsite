@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import MowingImg from "../assets/lawn.webp";
 import MulchingImg from "../assets/mulching.webp";
 import LeafCleanup from "../assets/leafcleanup.webp";
-import Button from "../items/Button";
+import FormButton from "../items/FormButton";
+import CallButton from "../items/CallButton";
 
 const HeadPage = () => {
   return (
@@ -55,8 +56,8 @@ const HeadPage = () => {
         free quote form for more information.
       </p>
       <div className="mt-8 space-x-4 flex flex-row justify-center">
-        <Button text="Call Now" />
-        <Button text="Request Quote" />
+        <CallButton />
+        <FormButton text="Request Quote" />
       </div>
     </div>
   );
