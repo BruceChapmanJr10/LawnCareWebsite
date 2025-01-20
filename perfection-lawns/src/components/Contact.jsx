@@ -5,7 +5,7 @@ import {
   faPhone,
   faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import Button from "../items/Button";
+import Button from "../items/FormButton";
 
 const Contact = () => {
   return (
