@@ -86,13 +86,14 @@ const Modal = ({ onClose }) => {
 
             <div>
               <label htmlFor="message" className="block mb-2">
-                Message
+                Service
               </label>
               <textarea
                 type="text"
                 className="w-full px-4 py-2 rounded-md text-black bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                 rows="3"
                 name="message"
+                placeholder="Services Required"
               />
             </div>
             <button
