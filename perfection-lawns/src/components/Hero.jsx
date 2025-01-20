@@ -1,9 +1,16 @@
 import React from "react";
+
 import HeroImage from "../assets/heroimage.jpg";
 
 const Hero = () => {
   return (
-    // Hero Main
+
+import HeroImage from "../assets/lawn.webp";
+import Button from "../items/Button";
+
+const Hero = () => {
+  return (
+
     <div className="bg-black text-white text-center py-16">
       <img
         src={HeroImage}
@@ -32,6 +39,7 @@ const Hero = () => {
         estimate over the phone.
       </p>
 
+
       {/* Buttons */}
       <div className="mt-8 space-x-4">
         <button
@@ -46,6 +54,11 @@ const Hero = () => {
         >
           Request Quote
         </button>
+
+      <div className="mt-8 space-x-4 flex flex-row justify-center">
+        <Button text="Call Now" />
+        <Button text="Request Quote" />
+
       </div>
     </div>
   );

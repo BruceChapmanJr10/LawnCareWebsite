@@ -1,5 +1,10 @@
 import React from "react";
+
 import AboutImage from "../assets/weedwacker.webp";
+
+import AboutImage from "../assets/landscape.webp";
+import Button from "../items/Button";
+
 
 const About = () => {
   return (
@@ -58,6 +63,10 @@ const About = () => {
             </h3>
             <p>Happy Customers</p>
           </div>
+        </div>
+        <div className="mt-20 space-x-5 flex flex-row justify-center">
+          <Button text="Call Now" />
+          <Button text="Request Quote" />
         </div>
       </div>
     </div>

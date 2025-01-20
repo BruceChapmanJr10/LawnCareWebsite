@@ -1,7 +1,12 @@
+
 import React, { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Button from "../items/Button";
 import logoImg from "../assets/logo.jpg";
+
+import React from "react";
+import Button from "../items/Button";
+
 
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -58,8 +63,12 @@ const Navbar = () => {
             Blog
           </a>
         </div>
+
         {/* Nav Button */}
         <Button text="Call Now" />
+
+        <Button text="Submit" />
+
       </div>
     </motion.nav>
   );
