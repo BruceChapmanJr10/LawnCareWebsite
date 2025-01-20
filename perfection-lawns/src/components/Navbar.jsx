@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import CallButton from "../items/CallButton";
+import LogoImage from "../assets/logo.jpg";
 
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -29,8 +30,10 @@ const Navbar = () => {
     >
       <div className="container py-2 flex justify-center md:justify-between items-center">
         <div className="text-2xl font-bold hidden md:inline">
-          {" "}
-          Perfection Lawns{" "}
+          <div className="flex flex-row gap-3">
+            <img src={LogoImage} alt="logo" className="rounded-full h-10" />{" "}
+            <h2>Perfection Lawns</h2>
+          </div>
         </div>
         <div className="space-x-6">
           <a href="#home" className="hover:text-gray-400">
