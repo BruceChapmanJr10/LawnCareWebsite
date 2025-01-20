@@ -6,15 +6,17 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import HeadPage from "./components/HeadPage";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <HeadPage />
       <About />
       <Services />
       <Contact />
+      <Hero />
       <Footer />
     </div>
   );
