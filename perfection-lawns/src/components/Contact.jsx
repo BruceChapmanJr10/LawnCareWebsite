@@ -13,6 +13,7 @@ const Contact = () => {
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Contact</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
+          {/* Business Contact Info */}
           <div className="flex-1">
             <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-orange-600 mb-4">
               Let's Talk About Your Project
@@ -52,6 +53,8 @@ const Contact = () => {
               </a>
             </div>
           </div>
+
+          {/* Subscription Form */}
           <div className="flex-1 w-full">
             <form className="space-y-4">
               <div>

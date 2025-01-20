@@ -1,9 +1,16 @@
 import React from "react";
+
+import HeroImage from "../assets/heroimage.jpg";
+
+const Hero = () => {
+  return (
+
 import HeroImage from "../assets/lawn.webp";
 import Button from "../items/Button";
 
 const Hero = () => {
   return (
+
     <div className="bg-black text-white text-center py-16">
       <img
         src={HeroImage}
@@ -31,9 +38,27 @@ const Hero = () => {
         your free estimate. For most lawn mowing services, we can provide an
         estimate over the phone.
       </p>
+
+
+      {/* Buttons */}
+      <div className="mt-8 space-x-4">
+        <button
+          className="bg-gradient-to-r from-green-500 to-orange-600 text-white 
+                            hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full "
+        >
+          Call Today
+        </button>
+        <button
+          className="bg-gradient-to-r from-yellow-500 to-green-500 text-white 
+                            hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full "
+        >
+          Request Quote
+        </button>
+
       <div className="mt-8 space-x-4 flex flex-row justify-center">
         <Button text="Call Now" />
         <Button text="Request Quote" />
+
       </div>
     </div>
   );
