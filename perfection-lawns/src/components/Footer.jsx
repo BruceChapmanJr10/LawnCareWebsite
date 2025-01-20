@@ -6,6 +6,11 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faPhone,
+  faMapMarkedAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -36,29 +41,64 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-600 pt-4 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} PerfecionLawnsLLc. All rights
-            reserved
-          </p>
-          <div className="flex space-x-4 my-4 md:my-0">
-            <a href="#" className="text-gray-400 hover:text-white">
-              <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-            </a>
+          <div className="flex-1">
+            <p>Contact Information:</p>
+            <div className="mb-4 mt-4">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="inline-block text-green-400 mr-2"
+              ></FontAwesomeIcon>
+              <a
+                href="mailto:brucechapmanjr10@gmail.com"
+                className="hover:underline"
+              >
+                Send Message
+              </a>
+            </div>
+
+            <div className="mb-4">
+              <FontAwesomeIcon
+                icon={faPhone}
+                className="inline-block text-green-400 mr-2"
+              ></FontAwesomeIcon>
+              <span>+15409316467</span>
+            </div>
+
+            <div className="mb-4">
+              <FontAwesomeIcon
+                icon={faMapMarkedAlt}
+                className="inline-block text-green-400 mr-2"
+              ></FontAwesomeIcon>
+              <a
+                href="mailto:brucechapmanjr10@gmail.com"
+                className="hover:underline"
+              >
+                <span> street, city, country, zip </span>
+              </a>
+            </div>
           </div>
-          <div>
-            <a href="#" className="text-gray-400 hover:text-white">
+          <div className="flex-1">
+            <div className="flex space-x-4 my-4 md:my-0">
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+              </a>
+            </div>
+          </div>
+          <div className="text-gray-400">
+            <a href="#" className="hover:text-white">
               Privacy
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </a>{" "}
+            {"||"}{" "}
+            <a href="#" className=" hover:text-white">
               Terms Of Services
             </a>
           </div>

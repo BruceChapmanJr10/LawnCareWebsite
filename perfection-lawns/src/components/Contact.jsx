@@ -5,7 +5,6 @@ import {
   faPhone,
   faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import Button from "../items/FormButton";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -50,7 +49,7 @@ const Contact = () => {
                 href="mailto:brucechapmanjr10@gmail.com"
                 className="hover:underline"
               >
-                Send Message
+                Send Email
               </a>
             </div>
 
@@ -59,7 +58,7 @@ const Contact = () => {
                 icon={faPhone}
                 className="inline-block text-green-400 mr-2"
               ></FontAwesomeIcon>
-              <span>+15409316467</span>
+              <a href="tel:+15409316457">540-931-6467</a>
             </div>
 
             <div className="mb-4">
@@ -71,7 +70,7 @@ const Contact = () => {
                 href="mailto:brucechapmanjr10@gmail.com"
                 className="hover:underline"
               >
-                <span> street, city, country, zip </span>
+                <span> Winchester, VA </span>
               </a>
             </div>
           </div>
