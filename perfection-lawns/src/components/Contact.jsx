@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -6,8 +6,31 @@ import {
   faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "../items/FormButton";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  //Send Email
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_mb49urf", "template_0845rrb", form.current, {
+        publicKey: "7mfYLsk53yHGUh25L",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          console.log("Message Sent");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div className="bg-black text-white py-20" id="contact">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
@@ -53,7 +76,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex-1 w-full">
-            <form className="space-y-4">
+            {/* Form */}
+            <form className="space-y-4" ref={form} onSubmit={sendEmail}>
               <div>
                 <label htmlFor="name" className="block mb-2">
                   Name
@@ -87,7 +111,13 @@ const Contact = () => {
                   rows="5"
                 />
               </div>
-              <Button text="Submit" />
+              <button
+                type="submit"
+                className=" mt-4 w-full bg-gradient-to-r from-green-500 to-orange-600 text-white 
+                           md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full "
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
