@@ -83,6 +83,7 @@ const Contact = () => {
                   Name
                 </label>
                 <input
+                  name="user_name"
                   type="text"
                   className="w-full pt-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   placeholder="Enter Your Name"
@@ -94,20 +95,33 @@ const Contact = () => {
                   Email
                 </label>
                 <input
+                  name="user_email"
                   type="email"
                   className="w-full pt-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   placeholder="Enter Your Email"
                 />
               </div>
+              <div>
+                <label htmlFor="address" className="block mb-2">
+                  Address
+                </label>
+                <input
+                  name="user_address"
+                  type="text"
+                  className="w-full pt-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  placeholder="Enter Your Address"
+                  required
+                />
+              </div>
 
               <div>
                 <label htmlFor="message" className="block mb-2">
-                  Message
+                  Service
                 </label>
                 <textarea
                   type="text"
                   className="w-full pt-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
-                  placeholder="Enter Your Name"
+                  placeholder="Service Required"
                   rows="5"
                 />
               </div>
