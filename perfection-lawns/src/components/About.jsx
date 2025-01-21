@@ -1,7 +1,6 @@
 import React from "react";
 import AboutImage from "../assets/landscape.webp";
 import FormButton from "../items/FormButton";
-import CallButton from "../items/CallButton";
 
 const About = () => {
   return (

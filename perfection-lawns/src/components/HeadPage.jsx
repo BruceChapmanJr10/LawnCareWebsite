@@ -19,13 +19,15 @@ const HeadPage = () => {
       </div>
       <div className=" mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
-          <img
-            src={MowingImg}
-            alt="Mowed Lawn"
-            className="mx-auto mb-3 w-48 h-48 rounded-lg object-cover transform
+          <a href="/lawn-service">
+            <img
+              src={MowingImg}
+              alt="Mowed Lawn"
+              className="mx-auto mb-3 w-48 h-48 rounded-lg object-cover transform
                         transition-transform duration-300 hover:scale-105"
-          />
-          <h3>Lawn Mowing</h3>
+            />
+            <h3>Lawn Mowing</h3>
+          </a>
         </div>
         <div>
           <img

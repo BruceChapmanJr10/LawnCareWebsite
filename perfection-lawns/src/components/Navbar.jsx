@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="space-x-6">
-          <a href="#home" className="hover:text-gray-400">
+          <a href="/" className="hover:text-gray-400">
             Home
           </a>
           <a href="#about" className="hover:text-gray-400">
