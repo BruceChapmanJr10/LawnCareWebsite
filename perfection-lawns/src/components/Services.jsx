@@ -1,5 +1,6 @@
 import React from "react";
 import ServicesList from "../items/ServicesList";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -24,12 +25,13 @@ const Services = () => {
               </h3>
               <p className="mt-5 text-gray-300">{service.description}</p>
 
-              <a
+              <Link
+                to={service.page}
                 href="#"
                 className="mt-4 inline-block text-green-400 hover:text-blue-500"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           ))}
         </div>
