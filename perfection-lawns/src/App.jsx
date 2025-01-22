@@ -8,6 +8,11 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Landscape from "./pages/Landscape";
+import LeafCleanup from "./pages/LeafCleanup";
+import Mulching from "./pages/Mulching";
+import Planting from "./pages/Planting";
+import SpringCleanups from "./pages/SpringCleanups";
 
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
         <Route path="/aboutowner" element={<Hero />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/landscape" element={<Landscape />} />
+        <Route path="/leafcleanup" element={<LeafCleanup />} />
+        <Route path="/mulching" element={<Mulching />} />
+        <Route path="/planting" element={<Planting />} />
+        <Route path="/springcleanups" element={<SpringCleanups />} />
       </Routes>
     </div>
   );
