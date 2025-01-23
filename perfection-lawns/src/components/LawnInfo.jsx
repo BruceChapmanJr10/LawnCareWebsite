@@ -1,12 +1,12 @@
 import React from "react";
-import HeroImage from "../assets/heroimage.jpg";
+import LawnImg from "../assets/lawn.webp";
 import FormButton from "../items/FormButton";
 
-const Hero = () => {
+const LawnInfo = () => {
   return (
     <div className="bg-black text-white text-center py-16">
       <img
-        src={HeroImage}
+        src={LawnImg}
         alt="Mowed Lawn"
         className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform
                         transition-transform duration-300 hover:scale-105"
@@ -38,4 +38,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default LawnInfo;

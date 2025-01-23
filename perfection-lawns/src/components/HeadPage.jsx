@@ -30,22 +30,27 @@ const HeadPage = () => {
           </a>
         </div>
         <div>
-          <img
-            src={MulchingImg}
-            alt="Mowed Lawn"
-            className="mx-auto mb-3 w-48 h-48 rounded-lg object-cover transform
+          <a href="./mulching">
+            <img
+              src={MulchingImg}
+              alt="Mowed Lawn"
+              className="mx-auto mb-3 w-48 h-48 rounded-lg object-cover transform
                         transition-transform duration-300 hover:scale-105"
-          />
-          <h3>Mulching</h3>
+            />
+
+            <h3>Mulching</h3>
+          </a>
         </div>
         <div>
-          <img
-            src={LeafCleanup}
-            alt="Mowed Lawn"
-            className="mx-auto mb-3 w-48 h-48 rounded-lg object-cover transform
+          <a href="./leafcleanup">
+            <img
+              src={LeafCleanup}
+              alt="Mowed Lawn"
+              className="mx-auto mb-3 w-48 h-48 rounded-lg object-cover transform
                         transition-transform duration-300 hover:scale-105"
-          />
-          <h3>Leaf Clean-ups</h3>
+            />
+            <h3>Leaf Clean-ups</h3>
+          </a>
         </div>
       </div>
 

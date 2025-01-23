@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "../modals/FormModal";
 
-const Button = (props) => {
+const FormButton = (props) => {
   const [showModal, setShowModal] = useState(false);
   return (
     <div>
@@ -18,4 +18,4 @@ const Button = (props) => {
   );
 };
 
-export default Button;
+export default FormButton;
