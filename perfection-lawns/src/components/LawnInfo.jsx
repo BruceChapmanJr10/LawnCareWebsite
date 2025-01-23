@@ -19,18 +19,43 @@ const LawnInfo = () => {
         </span>
         Services
       </h1>
-      <p className="mt-4 text-lg text-gray-300">
-        Since I was a kid, I’ve had a passion for mowing lawns, starting out by
-        knocking on doors in the neighborhood for $10 a yard. I love the
-        satisfaction of seeing a freshly mowed lawn and breathing in the fresh
-        scent of cut grass. At Perfection Lawns LLC, we treat your lawn like
-        it’s our own, taking pride in creating crisp, clean stripes and keeping
-        your yard free of debris.We are fully licensed and insured, ensuring
-        peace of mind with every service. Once you choose us as your lawn care
-        provider, you’ll never want to go anywhere else. Call today to schedule
-        your free estimate. For most lawn mowing services, we can provide an
-        estimate over the phone.
-      </p>
+      <div className="flex flex-col px-5 text-left space-y-6">
+        <p className="mt-4 text-lg mx-auto text-gray-300">
+          At Perfection Lawns LLC, we are committed to delivering top-notch lawn
+          care with every visit. Our lawn mowing services include:
+        </p>
+        <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
+          <li>Mowing for an even, clean-cut look </li>
+          <li>String-trimming around edges and obstacles </li>
+          <li>
+            Edging along concrete and asphalt for a sharp, defined boundary
+          </li>
+          <li>
+            Blowing grass clippings off hard surfaces, leaving your yard neat
+            and tidy
+          </li>
+        </ul>
+        <p className="mt-7 text-lg mx-auto text-green-700">
+          We offer weekly lawn mowing from the beginning of April to early
+          November, weather permitting.
+        </p>
+        <p className="text-lg mx-auto text-green-700">
+          This typically includes around 30 cuts, which can be distributed
+          across a 12-month plan for your convenience.
+        </p>
+
+        <h3 className="mt-4 text-xl text-gray-300 mx-auto">Why Weakly Mows:</h3>
+        <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
+          <li>
+            Promote Healthy Growth: Regular weekly mowing helps maintain an even
+            lawn, encouraging robust growth
+          </li>
+          <li>
+            Natural Fertilization: Small clippings from each mow decompose and
+            enrich your lawn, providing essential nutrients
+          </li>
+        </ul>
+      </div>
       <div className="mt-8 space-x-4 flex flex-row justify-center">
         <FormButton text="Request Quote" />
       </div>
