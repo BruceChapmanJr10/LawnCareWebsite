@@ -8,16 +8,16 @@ const LawnInfo = () => {
       <img
         src={LawnImg}
         alt="Mowed Lawn"
-        className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform
+        className="mt-2 mx-auto mb-8 w-60 h-60 rounded-full object-cover transform
                         transition-transform duration-300 hover:scale-105"
       />
       <h1 className="text-4xl font-bold">
         {" "}
-        I am{" "}
+        Professional{" "}
         <span className="text-transparent bg bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-          Bruce Chapman{" "}
+          Lawn Mowing{" "}
         </span>
-        Owner of Perfection Lawns LLC
+        Services
       </h1>
       <p className="mt-4 text-lg text-gray-300">
         Since I was a kid, I’ve had a passion for mowing lawns, starting out by
