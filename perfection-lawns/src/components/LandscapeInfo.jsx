@@ -32,36 +32,55 @@ const LandscapeInfo = () => {
           Our comprehensive landscape maintenance services include:
         </p>
         <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
-          <li>Mowing for an even, clean-cut look </li>
-          <li>String-trimming around edges and obstacles </li>
           <li>
-            Edging along concrete and asphalt for a sharp, defined boundary
+            <span className="font-bold">Lawn Mowing and Edging:</span>
+            <br />
+            <span className="text-base">
+              ** We’ll ensure your lawn is mowed to perfection, with crisp,
+              clean edges around flower beds, driveways, and walkways. **
+            </span>
           </li>
           <li>
-            Blowing grass clippings off hard surfaces, leaving your yard neat
-            and tidy
+            <span className="font-bold">Hedge Trimming:</span>
+            <br />
+            <span className="text-base">
+              ** Keep your shrubs and hedges neat and tidy with our expert
+              trimming services, enhancing the overall appearance of your yard.
+              **
+            </span>
+          </li>
+          <li>
+            <span className="font-bold">Weed Control:</span>
+            <br />
+            <span className="text-base">
+              ** We’ll remove unsightly weeds from your lawn and flower beds to
+              maintain a healthy and clean landscape. **
+            </span>
+          </li>
+          <li>
+            <span className="font-bold">Flower Bed Maintenance:</span>
+            <br />
+            <span className="text-base">
+              ** Keep your flower beds looking vibrant with regular care,
+              including weeding, mulching, and trimming. **
+            </span>
+          </li>
+          <li>
+            <span className="font-bold">Seasonal Cleanup:</span>
+            <br />
+            <span className="text-base">
+              ** We offer fall and spring cleanups to keep your landscape
+              thriving through every season. **
+            </span>
           </li>
         </ul>
-        <p className="mt-7 text-lg mx-auto text-green-700">
-          We offer weekly lawn mowing from the beginning of April to early
-          November, weather permitting.
+        <p className="mt-7 text-lg md:mx-12 ">
+          By adding maintenance to your plan, you'll not only save time, but
+          you'll also ensure your home’s exterior stays flawless throughout the
+          year. At Perfection Lawns LLC, we take pride in delivering exceptional
+          service and a landscape that reflects the care and attention it
+          deserves.
         </p>
-        <p className="text-lg mx-auto text-green-700">
-          This typically includes around 30 cuts, which can be distributed
-          across a 12-month plan for your convenience.
-        </p>
-
-        <h3 className="mt-4 text-xl text-gray-300 mx-auto">Why Weakly Mows:</h3>
-        <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
-          <li>
-            Promote Healthy Growth: Regular weekly mowing helps maintain an even
-            lawn, encouraging robust growth
-          </li>
-          <li>
-            Natural Fertilization: Small clippings from each mow decompose and
-            enrich your lawn, providing essential nutrients
-          </li>
-        </ul>
       </div>
       <div className="mt-8 space-x-4 flex flex-row justify-center">
         <FormButton text="Request Quote" />
