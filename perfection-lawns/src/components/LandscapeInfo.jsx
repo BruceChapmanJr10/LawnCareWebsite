@@ -74,7 +74,7 @@ const LandscapeInfo = () => {
             </span>
           </li>
         </ul>
-        <p className="mt-7 text-lg md:mx-12 ">
+        <p className="mt-7 text-lg md:mx-12">
           By adding maintenance to your plan, you'll not only save time, but
           you'll also ensure your home’s exterior stays flawless throughout the
           year. At Perfection Lawns LLC, we take pride in delivering exceptional

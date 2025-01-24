@@ -14,12 +14,6 @@ const Services = () => {
               className="bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg 
                             transform transition-transform duration-300 hover:scale-105"
             >
-              <div
-                className="text-right text-2xl font-bold text-transparent bg-clip-text 
-                                bg-gradient-to-r from-green-600 to to-orange-600"
-              >
-                {service.id}
-              </div>
               <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-orange-600">
                 {service.title}
               </h3>
