@@ -20,15 +20,15 @@ const LandscapeInfo = () => {
         Services
       </h1>
       <div className="flex flex-col px-5 text-left space-y-6">
-        <p className="mt-4 text-lg mx-auto text-gray-300">
+        <p className="mt-4 text-lg md:mx-12 text-gray-300">
           At Perfection Lawns LLC, we believe a well-maintained landscape is key
           to a beautiful and inviting home. Let us help you keep your lawn and
           garden looking pristine all year round. We recommend adding landscape
           maintenance to your monthly plan for the best results. Our
           professional team will ensure your outdoor space remains perfectly
           manicured, giving you more time to enjoy it.
-          <br />
-          <br />
+        </p>
+        <p className="mt-4 text-lg mx-auto text-left text-gray-300">
           Our comprehensive landscape maintenance services include:
         </p>
         <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
