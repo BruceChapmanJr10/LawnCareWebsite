@@ -1,7 +1,12 @@
 import React from "react";
+import LandscapeInfo from "../components/LandscapeInfo";
 
 const Landscape = () => {
-  return <div>Landscape</div>;
+  return (
+    <div>
+      <LandscapeInfo />
+    </div>
+  );
 };
 
 export default Landscape;
