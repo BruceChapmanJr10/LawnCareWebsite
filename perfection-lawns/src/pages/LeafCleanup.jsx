@@ -1,7 +1,12 @@
 import React from "react";
+import LeafInfo from "../components/LeafInfo";
 
 const LeafCleanup = () => {
-  return <div>LeafCleanup</div>;
+  return (
+    <div>
+      <LeafInfo />
+    </div>
+  );
 };
 
 export default LeafCleanup;
