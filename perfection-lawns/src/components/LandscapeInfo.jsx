@@ -28,9 +28,9 @@ const LandscapeInfo = () => {
           professional team will ensure your outdoor space remains perfectly
           manicured, giving you more time to enjoy it.
         </p>
-        <p className="mt-4 text-lg mx-auto text-left text-gray-300">
+        <h3 className="mt-4 text-xl font-bold mx-auto text-left text-gray-300">
           Our comprehensive landscape maintenance services include:
-        </p>
+        </h3>
         <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
           <li>
             <span className="font-bold">Lawn Mowing and Edging:</span>

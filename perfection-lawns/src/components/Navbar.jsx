@@ -8,8 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(true);
   };
+
+  const leaveDropDown = () => setIsOpen(false);
 
   //navbar hiddin on scroll
 
@@ -37,7 +39,7 @@ const Navbar = () => {
       transition={{ duration: 0.2 }}
       className="bg-black text-white px-8 md:px-16 lg:px-24 sticky top-0 z-10"
     >
-      <div className="container py-2 flex justify-center md:justify-between items-center">
+      <div className="container py-2 flex justify-center md:justify-between items-center whitespace-nowrap">
         <div className="text-2xl font-bold hidden md:inline">
           <div className="flex flex-row gap-3">
             <img src={LogoImage} alt="logo" className="rounded-full h-10" />{" "}
@@ -53,12 +55,16 @@ const Navbar = () => {
           </a>
 
           {/* drop-down menu */}
-          <div className="relative inline-block text-left">
-            <button onClick={toggleDropdown} className="hover:text-gray-400">
-              <a className="hover:text-green-600">Services</a>
-            </button>
+          <div
+            onMouseEnter={toggleDropdown}
+            className="relative inline-block text-left"
+          >
+            <a href="/services" className="hover:text-green-600">
+              Services
+            </a>
             {isOpen && (
               <div
+                onMouseLeave={leaveDropDown}
                 className="origin-top-right absolute left-0 mt-2 w-40 
                     rounded-md shadow-lg bg-gray-700 ring-1 ring-black ring-opacity-5
                     focus:outline-none"
