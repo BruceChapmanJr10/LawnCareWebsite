@@ -4,6 +4,15 @@ import CallButton from "../items/CallButton";
 import LogoImage from "../assets/logo.jpg";
 
 const Navbar = () => {
+  //dropdown menu
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  //navbar hiddin on scroll
+
   const [isHidden, setIsHidden] = useState(false);
   const { scrollY } = useScroll();
   const lastYRef = useRef(0);
@@ -36,19 +45,74 @@ const Navbar = () => {
           </div>
         </div>
         <div className="space-x-6">
-          <a href="/" className="hover:text-gray-400">
+          <a href="/" className="hover:text-green-600">
             Home
           </a>
-          <a href="/about" className="hover:text-gray-400">
+          <a href="/about" className="hover:text-green-600">
             About
           </a>
-          <a href="/services" className="hover:text-gray-400">
-            Services
-          </a>
-          <a href="/contact" className="hover:text-gray-400">
+
+          {/* drop-down menu */}
+          <div className="relative inline-block text-left">
+            <button onClick={toggleDropdown} className="hover:text-gray-400">
+              <a className="hover:text-green-600">Services</a>
+            </button>
+            {isOpen && (
+              <div
+                className="origin-top-right absolute left-0 mt-2 w-40 
+                    rounded-md shadow-lg bg-gray-700 ring-1 ring-black ring-opacity-5
+                    focus:outline-none"
+                role="menu"
+              >
+                <div className="py-1" role="none">
+                  <a
+                    href="/lawn-service"
+                    className="block px-4 py-2 text-sm text-white 
+                            hover:bg-green-800"
+                    role="menuitem"
+                  >
+                    Lawn Mowing
+                  </a>
+                  <a
+                    href="/landscape"
+                    className="block px-4 py-2 text-sm text-white
+                            hover:bg-green-800"
+                    role="menuitem"
+                  >
+                    Landscaping
+                  </a>
+                  <a
+                    href="/leafcleanup"
+                    className="block px-4 py-2 text-sm text-white
+                            hover:bg-green-800"
+                    role="menuitem"
+                  >
+                    Leaf Removal
+                  </a>
+                  <a
+                    href="/mulching"
+                    className="block px-4 py-2 text-sm text-white
+                            hover:bg-green-800"
+                    role="menuitem"
+                  >
+                    Mulching
+                  </a>
+                  <a
+                    href="/planting"
+                    className="block px-4 py-2 text-sm text-white
+                            hover:bg-green-800"
+                    role="menuitem"
+                  >
+                    Planting
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+          <a href="/contact" className="hover:text-green-600">
             Contact
           </a>
-          <a href="#blog" className="hover:text-gray-400">
+          <a href="#blog" className="hover:text-green-600">
             Blog
           </a>
         </div>
