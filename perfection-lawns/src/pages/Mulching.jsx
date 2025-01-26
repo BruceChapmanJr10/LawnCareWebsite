@@ -1,7 +1,12 @@
 import React from "react";
+import MulchingInfo from "../components/MulchingInfo";
 
 const Mulching = () => {
-  return <div>Mulching</div>;
+  return (
+    <div>
+      <MulchingInfo />
+    </div>
+  );
 };
 
 export default Mulching;
