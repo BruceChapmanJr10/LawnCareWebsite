@@ -1,7 +1,12 @@
 import React from "react";
+import PlantingInfo from "../components/PlantingInfo";
 
 const Planting = () => {
-  return <div>Planting</div>;
+  return (
+    <div>
+      <PlantingInfo />
+    </div>
+  );
 };
 
 export default Planting;
