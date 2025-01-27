@@ -7,7 +7,7 @@ const PlantingInfo = () => {
     <div className="bg-black text-white text-center py-16">
       <img
         src={PlantingImg}
-        alt="Mowed Lawn"
+        alt="Planting Image"
         className="mt-2 mx-auto mb-8 w-60 h-60 rounded-full object-cover transform
                     transition-transform duration-300 hover:scale-105"
       />
@@ -15,49 +15,40 @@ const PlantingInfo = () => {
         {" "}
         Professional{" "}
         <span className="text-transparent bg bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-          Lawn Mowing{" "}
+          Planting{" "}
         </span>
         Services
       </h1>
       <div className="flex flex-col px-5 text-left space-y-6">
         <h3 className="mt-4 text-xl font-bold mx-auto text-gray-300">
-          At Perfection Lawns LLC, we are committed to delivering top-notch lawn
-          care with every visit.
+          At Perfection Lawns LLC, we understand the importance of a
+          well-planted garden in enhancing the beauty and value of your
+          property. Whether you're looking to create a vibrant flower bed,
+          install hedges for privacy, or design a functional vegetable garden,
+          our expert team is here to help. We specialize in tailored planting
+          services that meet the specific needs of your space, ensuring your
+          landscape looks its absolute best.
         </h3>
         <h4 className="mt-4 text-xl font-bold mx-auto text-gray-300">
-          Our lawn mowing services include:
+          Our Planting Services Include:
         </h4>
         <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
-          <li>Mowing for an even, clean-cut look </li>
-          <li>String-trimming around edges and obstacles </li>
-          <li>
-            Edging along concrete and asphalt for a sharp, defined boundary
-          </li>
-          <li>
-            Blowing grass clippings off hard surfaces, leaving your yard neat
-            and tidy
-          </li>
+          <li>Garden Design & Consultation </li>
+          <li>Plant Selection </li>
+          <li>Professional Planting & Installation</li>
+          <li>Seasonal Planting</li>
+          <li>Ongoing Care and Maintenance</li>
         </ul>
-        <p className="pt-5 text-lg mx-auto text-green-700">
-          We offer weekly lawn mowing from the beginning of April to early
-          November, weather permitting.
-        </p>
-        <p className="text-lg mx-auto text-green-700">
-          This typically includes around 30 cuts, which can be distributed
-          across a 12-month plan for your convenience.
-        </p>
 
-        <h3 className="pt-5 text-xl text-gray-300 mx-auto">Why Weakly Mows:</h3>
-        <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
-          <li>
-            Promote Healthy Growth: Regular weekly mowing helps maintain an even
-            lawn, encouraging robust growth
-          </li>
-          <li>
-            Natural Fertilization: Small clippings from each mow decompose and
-            enrich your lawn, providing essential nutrients
-          </li>
-        </ul>
+        <h3 className="pt-5 text-xl text-gray-300 mx-auto">
+          Get Started Today!
+        </h3>
+        <p className="mt-7 text-lg md:mx-12 text-center">
+          Whether you're looking to enhance your garden with new plantings or
+          need help designing a completely new landscape, Perfection Lawns LLC
+          is here to turn your vision into reality. Contact us today for a
+          consultation, and let’s create the perfect outdoor space together!
+        </p>
       </div>
       <div className="mt-8 space-x-4 flex flex-row justify-center">
         <FormButton text="Request Quote" />
