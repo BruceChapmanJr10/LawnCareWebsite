@@ -20,7 +20,7 @@ const PlantingInfo = () => {
         Services
       </h1>
       <div className="flex flex-col px-5 text-left space-y-6">
-        <h3 className="mt-4 text-xl font-bold mx-auto text-gray-300">
+        <h3 className="mt-4 text-xl mx-auto max-w-2xl text-left text-gray-300">
           At Perfection Lawns LLC, we understand the importance of a
           well-planted garden in enhancing the beauty and value of your
           property. Whether you're looking to create a vibrant flower bed,
@@ -43,7 +43,7 @@ const PlantingInfo = () => {
         <h3 className="pt-5 text-xl text-gray-300 mx-auto">
           Get Started Today!
         </h3>
-        <p className="mt-7 text-lg md:mx-12 text-center">
+        <p className="mt-7 text-lg max-w-2xl mx-auto text-center">
           Whether you're looking to enhance your garden with new plantings or
           need help designing a completely new landscape, Perfection Lawns LLC
           is here to turn your vision into reality. Contact us today for a

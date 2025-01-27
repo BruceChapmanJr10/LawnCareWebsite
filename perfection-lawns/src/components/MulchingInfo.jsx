@@ -23,7 +23,7 @@ const MulchingInfo = () => {
         <h3 className="mt-4 text-xl font-bold mx-auto text-gray-300">
           Make Your Landscape Stand Out With Some Fresh Mulch
         </h3>
-        <p className="mt-4 text-lg md:mx-12 text-gray-300">
+        <p className="mt-4 text-lg max-w-2xl mx-auto text-left text-gray-300">
           Mulching is a simple yet highly effective way to improve the health,
           beauty, and sustainability of your lawn and garden. Whether you are
           looking to conserve water, promote soil health, or enhance your

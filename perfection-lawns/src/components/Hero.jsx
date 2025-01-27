@@ -19,7 +19,7 @@ const Hero = () => {
         </span>
         Owner of Perfection Lawns LLC
       </h1>
-      <p className="mt-4 text-lg text-gray-300">
+      <p className="mt-4 text-lg text-left text-gray-300 max-w-2xl mx-auto">
         Since I was a kid, I’ve had a passion for mowing lawns, starting out by
         knocking on doors in the neighborhood for $10 a yard. I love the
         satisfaction of seeing a freshly mowed lawn and breathing in the fresh

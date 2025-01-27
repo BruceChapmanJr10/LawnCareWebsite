@@ -20,13 +20,13 @@ const LeafInfo = () => {
         Services
       </h1>
       <div className="flex flex-col px-5 text-left space-y-6">
-        <p className="mt-4 text-lg md:mx-12 text-gray-300">
+        <p className="mt-4 text-lg max-w-2xl mx-auto  text-gray-300">
           At Perfection Lawns LLC, we understand that maintaining a clean,
           healthy lawn goes beyond regular mowing. Leaf removal is an essential
           service to protect your lawn and keep your yard looking neat and
           inviting throughout the fall and the beginning of Spring.
         </p>
-        <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5">
+        <ul className="text-lg list-disc marker:text-green-800 mx-auto text-left pl-5 space-y-5 max-w-2xl">
           <li>
             <span className="font-bold">Leaf Blowing:</span>
             <br />
@@ -71,7 +71,7 @@ const LeafInfo = () => {
         <p className="mt-4 text-lg md:mx-12 text-center text-gray-300">
           Benifits of Leaf Removal Include:
         </p>
-        <ul className="text-lg list-disc mx-auto max-w-screen-md marker:text-green-800 text-left pl-5 space-y-5">
+        <ul className="text-lg list-disc mx-auto max-w-2xl marker:text-green-800 text-left pl-5 space-y-5">
           <li>
             <span className="font-bold">Prevents Lawn Damage:</span>
             <br />
