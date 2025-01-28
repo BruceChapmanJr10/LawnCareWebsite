@@ -14,12 +14,12 @@ const Hero = () => {
       <h1 className="text-4xl font-bold">
         {" "}
         I am{" "}
-        <span className="text-transparent bg bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+        <span className=" px-3 text-transparent bg bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
           Bruce Chapman{" "}
         </span>
         Owner of Perfection Lawns LLC
       </h1>
-      <p className="mt-4 text-lg text-left text-gray-300 max-w-2xl mx-auto">
+      <p className="mt-4  px-3 text-lg text-left text-gray-300 max-w-2xl mx-auto">
         Since I was a kid, I’ve had a passion for mowing lawns, starting out by
         knocking on doors in the neighborhood for $10 a yard. I love the
         satisfaction of seeing a freshly mowed lawn and breathing in the fresh

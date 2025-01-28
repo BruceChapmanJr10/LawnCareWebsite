@@ -54,7 +54,7 @@ const HeadPage = () => {
         </div>
       </div>
 
-      <p className="mt-4 text-lg text-gray-300 max-w-4xl mx-auto text-left">
+      <p className="mt-4 text-lg px-3 text-gray-300 max-w-4xl mx-auto text-left">
         Looking for a professional lawn mowing and landscape company who is
         reliable, trustworthy, and always listens to what the customer wants?
         Then you came to the right place! We treat our customers like family, no
