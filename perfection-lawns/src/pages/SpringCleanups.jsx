@@ -1,7 +1,12 @@
 import React from "react";
+import SpringCleanupInfo from "../components/SpringCleanupInfo";
 
 const SpringCleanups = () => {
-  return <div>SpringCleanups</div>;
+  return (
+    <div>
+      <SpringCleanupInfo />
+    </div>
+  );
 };
 
 export default SpringCleanups;
