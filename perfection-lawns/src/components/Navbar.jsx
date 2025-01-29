@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import CallButton from "../items/CallButton";
 import LogoImage from "../assets/logo.jpg";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   //dropdown menu
@@ -39,6 +40,7 @@ const Navbar = () => {
       transition={{ duration: 0.2 }}
       className="bg-black text-white px-8 md:px-16 lg:px-24 sticky top-0 z-10"
     >
+      <MobileNavbar />
       <div className="container py-2 flex justify-center md:justify-between items-center whitespace-nowrap">
         <div className="text-2xl font-bold hidden md:inline">
           <div className="flex flex-row gap-3">
@@ -46,7 +48,7 @@ const Navbar = () => {
             <h2>Perfection Lawns</h2>
           </div>
         </div>
-        <div className="space-x-6">
+        <div className="hidden lg:space-x-6 lg:inline">
           <a href="/" className="hover:text-green-600">
             Home
           </a>
