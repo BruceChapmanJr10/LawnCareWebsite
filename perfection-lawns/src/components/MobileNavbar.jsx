@@ -54,7 +54,12 @@ const MobileNavbar = () => {
           </ul>
         </div>
       )}
-      <Phone className="text-green-900 mt-3" href="tel:+15409316467" />
+      <a
+        className="bg-gradient-to-r from-green-500 to-orange-600 text-white px-3 py-3 mt-2 rounded-full "
+        href="tel:+15409316467"
+      >
+        <Phone />
+      </a>
     </div>
   );
 };
