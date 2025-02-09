@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+
 export const NavLinks = (props) => {
   return (
     <div className="hidden lg:space-x-6 lg:inline">
-      <a href="/" className="hover:text-green-600">
+      <Link to={"/"} href="#" className="hover:text-green-600">
         Home
-      </a>
-      <a href="/about" className="hover:text-green-600">
+      </Link>
+      <Link to={"/about"} href="#" className="hover:text-green-600">
         About
-      </a>
+      </Link>
 
       {/* drop-down menu */}
       <div
         onMouseEnter={props.toggleDropdown}
         className="relative inline-block text-left"
       >
-        <a href="/services" className="hover:text-green-600">
+        <Link to={"/services"} href="#" className="hover:text-green-600">
           Services
-        </a>
+        </Link>
         {props.isOpen && (
           <div
             onMouseLeave={props.leaveDropDown}
@@ -25,56 +27,58 @@ export const NavLinks = (props) => {
             role="menu"
           >
             <div className="py-1" role="none">
-              <a
-                href="/lawn-service"
+              <Link
+                to={"/lawn-service"}
+                href="#"
                 className="block px-4 py-2 text-sm text-white 
                       hover:bg-green-800"
                 role="menuitem"
               >
                 Lawn Mowing
-              </a>
-              <a
-                href="/landscape"
+              </Link>
+              <Link
+                to={"/landscape"}
+                href="#"
                 className="block px-4 py-2 text-sm text-white
                       hover:bg-green-800"
                 role="menuitem"
               >
                 Landscaping
-              </a>
-              <a
-                href="/leafcleanup"
+              </Link>
+              <Link
+                to={"/leafcleanup"}
+                href="#"
                 className="block px-4 py-2 text-sm text-white
                       hover:bg-green-800"
                 role="menuitem"
               >
                 Leaf Removal
-              </a>
-              <a
-                href="/mulching"
+              </Link>
+              <Link
+                to={"/mulching"}
+                href="#"
                 className="block px-4 py-2 text-sm text-white
                       hover:bg-green-800"
                 role="menuitem"
               >
                 Mulching
-              </a>
-              <a
-                href="/planting"
+              </Link>
+              <Link
+                to={"/planting"}
+                href="#"
                 className="block px-4 py-2 text-sm text-white
                       hover:bg-green-800"
                 role="menuitem"
               >
                 Planting
-              </a>
+              </Link>
             </div>
           </div>
         )}
       </div>
-      <a href="/contact" className="hover:text-green-600">
+      <Link to={"/contact"} href="#" className="hover:text-green-600">
         Contact
-      </a>
-      <a href="#blog" className="hover:text-green-600">
-        Blog
-      </a>
+      </Link>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import CallButton from "../items/CallButton";
 
 const HeadPage = () => {
   return (
-    <div className="bg-black text-white text-center py-16">
+    <div id="home" className="bg-black text-white text-center py-16">
       <div className="mb-8">
         <h1 className=" mb-3 text-4xl font-bold text-transparent bg bg-clip-text bg-gradient-to-r from-green-500 to-orange-600 ">
           Perfection Lawns LLC
