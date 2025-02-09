@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { useClickAway } from "react-use";
 import { Phone } from "lucide-react";
 import { Squash as Hamburger } from "hamburger-react";
+import { Link } from "react-router-dom";
 
 const MobileNavbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -16,40 +17,44 @@ const MobileNavbar = () => {
         <div className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-neutral-950 border-b border-b-white/20">
           <ul className="grid gap-2">
             <li className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700">
-              <a
+              <Link
                 onClick={() => setOpen((prev) => !prev)}
-                href="/"
+                to={"/"}
+                href="#"
                 className="hover:text-green-600 flex items-center justify-between w-full p-5 rounded-xl bg-neutral-950"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700">
-              <a
+              <Link
                 onClick={() => setOpen((prev) => !prev)}
-                href="/about"
+                to={"/about"}
+                href="#"
                 className="hover:text-green-600 flex items-center justify-between w-full p-5 rounded-xl bg-neutral-950"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700">
-              <a
+              <Link
                 onClick={() => setOpen((prev) => !prev)}
-                href="/services"
+                to={"/services"}
+                href="#"
                 className="hover:text-green-600 flex items-center justify-between w-full p-5 rounded-xl bg-neutral-950"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700">
-              <a
+              <Link
                 onClick={() => setOpen((prev) => !prev)}
-                href="/contact"
+                to={"/contact"}
+                href="#"
                 className="hover:text-green-600 flex items-center justify-between w-full p-5 rounded-xl bg-neutral-950"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
