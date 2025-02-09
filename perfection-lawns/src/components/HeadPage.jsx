@@ -20,7 +20,7 @@ const HeadPage = () => {
       </div>
       <div className=" mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
-          <Link to={"/lawn-services"} href="#">
+          <Link to={"/lawn-service"} href="#">
             <img
               src={MowingImg}
               alt="Mowed Lawn"
@@ -43,7 +43,7 @@ const HeadPage = () => {
           </Link>
         </div>
         <div>
-          <a to={"./leafcleanup"} href="#">
+          <a to={"/leafcleanup"} href="#">
             <img
               src={LeafCleanup}
               alt="Mowed Lawn"
