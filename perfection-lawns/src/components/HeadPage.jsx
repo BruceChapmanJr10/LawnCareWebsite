@@ -4,6 +4,7 @@ import MulchingImg from "../assets/mulching.webp";
 import LeafCleanup from "../assets/leafcleanup.webp";
 import FormButton from "../items/FormButton";
 import CallButton from "../items/CallButton";
+import { Link } from "react-router-dom";
 
 const HeadPage = () => {
   return (
@@ -19,7 +20,7 @@ const HeadPage = () => {
       </div>
       <div className=" mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
-          <a href="/lawn-service">
+          <Link to={"/lawn-services"} href="#">
             <img
               src={MowingImg}
               alt="Mowed Lawn"
@@ -27,10 +28,10 @@ const HeadPage = () => {
                         transition-transform duration-300 hover:scale-105"
             />
             <h3>Lawn Mowing</h3>
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="./mulching">
+          <Link to={"/mulching"} href="#">
             <img
               src={MulchingImg}
               alt="Mowed Lawn"
@@ -39,10 +40,10 @@ const HeadPage = () => {
             />
 
             <h3>Mulching</h3>
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="./leafcleanup">
+          <a to={"./leafcleanup"} href="#">
             <img
               src={LeafCleanup}
               alt="Mowed Lawn"
