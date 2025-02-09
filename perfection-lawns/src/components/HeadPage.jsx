@@ -43,7 +43,7 @@ const HeadPage = () => {
           </Link>
         </div>
         <div>
-          <a to={"/leafcleanup"} href="#">
+          <Link to={"/leafcleanup"} href="#">
             <img
               src={LeafCleanup}
               alt="Mowed Lawn"
@@ -51,7 +51,7 @@ const HeadPage = () => {
                         transition-transform duration-300 hover:scale-105"
             />
             <h3>Leaf Clean-ups</h3>
-          </a>
+          </Link>
         </div>
       </div>
 
