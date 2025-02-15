@@ -14,10 +14,12 @@ import Mulching from "./pages/Mulching";
 import Planting from "./pages/Planting";
 import SpringCleanups from "./pages/SpringCleanups";
 import { HashRouter } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <div>
       <HashRouter base="/">
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

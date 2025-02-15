@@ -36,7 +36,7 @@ const Navbar = () => {
         visable: { y: "0%" },
         hidden: { y: "-90%" },
       }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.08 }}
       className="bg-black text-white px-8 md:px-16 lg:px-24 sticky top-0 z-10"
     >
       <MobileNavbar />

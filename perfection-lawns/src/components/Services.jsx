@@ -9,10 +9,12 @@ const Services = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ServicesList.map((service) => (
-            <div
+            <Link
+              to={service.page}
+              href="#"
               key={service.id}
               className="bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg 
-                            transform transition-transform duration-300 hover:scale-105"
+                        transform transition-transform duration-300 hover:scale-105"
             >
               <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-orange-600">
                 {service.title}
@@ -26,7 +28,7 @@ const Services = () => {
               >
                 Learn More
               </Link>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
