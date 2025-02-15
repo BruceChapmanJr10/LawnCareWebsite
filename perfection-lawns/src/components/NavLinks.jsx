@@ -11,16 +11,19 @@ export const NavLinks = (props) => {
       </Link>
 
       {/* drop-down menu */}
-      <div
-        onMouseEnter={props.toggleDropdown}
-        className="relative inline-block text-left"
-      >
-        <Link to={"/services"} href="#" className="hover:text-green-600">
+
+      <div className="relative inline-block text-left">
+        <Link
+          onMouseOver={props.toggleDropdown}
+          to={"/services"}
+          href="#"
+          className="hover:text-green-600"
+        >
           Services
         </Link>
         {props.isOpen && (
           <div
-            onMouseLeave={props.leaveDropDown}
+            onMouseLeave={props.leaveDropdown}
             className="origin-top-right absolute left-0 mt-2 w-40 
               rounded-md shadow-lg bg-gray-700 ring-1 ring-black ring-opacity-5
               focus:outline-none"
@@ -76,6 +79,7 @@ export const NavLinks = (props) => {
           </div>
         )}
       </div>
+
       <Link to={"/contact"} href="#" className="hover:text-green-600">
         Contact
       </Link>

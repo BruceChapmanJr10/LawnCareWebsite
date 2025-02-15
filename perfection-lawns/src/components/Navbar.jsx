@@ -9,11 +9,9 @@ const Navbar = () => {
   //dropdown menu
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(true);
-  };
+  const toggleDropdown = () => setIsOpen((prev) => !prev);
 
-  const leaveDropDown = () => setIsOpen(false);
+  const leaveDropdown = () => setIsOpen((prev) => false);
 
   //navbar hiddin on scroll
 
@@ -51,7 +49,7 @@ const Navbar = () => {
         </div>
         <NavLinks
           toggleDropdown={toggleDropdown}
-          leaveDropDown={leaveDropDown}
+          leaveDropdown={leaveDropdown}
           isOpen={isOpen}
         />
         <CallButton />
