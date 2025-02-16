@@ -16,18 +16,16 @@ const Services = () => {
               className="bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg 
                         transform transition-transform duration-300 hover:scale-105"
             >
-              <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-orange-600">
+              <h3 className="mt-2 flex justify-center  text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-orange-600">
                 {service.title}
               </h3>
-              <p className="mt-5 text-gray-300">{service.description}</p>
+              <p className="mt-5 flex justify-center text-gray-300">
+                {service.description}
+              </p>
 
-              <Link
-                to={service.page}
-                href="#"
-                className="mt-4 inline-block text-green-400 hover:text-blue-500"
-              >
+              <p className="mt-4 flex justify-center align-center text-green-400">
                 Learn More
-              </Link>
+              </p>
             </Link>
           ))}
         </div>
